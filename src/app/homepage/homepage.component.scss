@@ -1,5 +1,14 @@
+@import '../app.component.scss';
+
 .container {
+    color: $cor-principal;
     width: 1140px;
     display: block;
     margin: auto;
+
+    img {
+        width: 500px;
+        margin-left: 55%;
+        box-shadow: $sombreamento;
+    }
 }

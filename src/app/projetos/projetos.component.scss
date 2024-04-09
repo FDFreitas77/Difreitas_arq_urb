@@ -1,0 +1,42 @@
+@import '../app.component.scss';
+
+h2 {
+    text-align: center;
+    color: $verde;
+}
+
+.projetos-executados {
+    padding: 0;
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    flex-wrap: wrap;
+
+    .proj {
+        list-style-type: none;
+        padding: 10px;
+        width: 30%;
+        font-family: $font-principal;
+        font-size: $media;
+        color: $cor-principal;
+        border-radius: 10px;
+        box-shadow: $sombreamento;
+        transition: $transition;
+       &:hover{
+        box-shadow: $sombreamento-hover;
+       }
+       
+
+        img {
+            width: 100%;
+        }
+
+        h3 {
+            color: $cor-principal;
+            font-size: $media;
+            margin-top: 12px;
+
+
+        }
+    }
+}
