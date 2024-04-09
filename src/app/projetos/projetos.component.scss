@@ -6,12 +6,8 @@ h2 {
 }
 
 .projetos-executados {
-    padding: 0;
-    display: flex;
     width: 100%;
-    gap: 10px;
-    flex-wrap: wrap;
-
+ 
     .proj {
         list-style-type: none;
         padding: 10px;
@@ -22,21 +18,22 @@ h2 {
         border-radius: 10px;
         box-shadow: $sombreamento;
         transition: $transition;
-       &:hover{
-        box-shadow: $sombreamento-hover;
-       }
-       
+
+        &:hover {
+            box-shadow: $sombreamento-hover;
+        }
+
 
         img {
             width: 100%;
         }
 
         h3 {
+            display: flex;
+            justify-content: space-between;
             color: $cor-principal;
             font-size: $media;
             margin-top: 12px;
-
-
         }
     }
 }
